@@ -1,0 +1,209 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+
+.block {
+  display: block;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  height: 500px;
+  width: 100%;
+}
+
+.calculations {
+  width: 70%;
+  height: 14rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.tip {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+  flex-basis: 33.3333%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.names {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.btn {
+  background-color: hsl(183, 100%, 15%);
+  border-style: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+}
+
+.btn:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: #000;
+} 
+
+.btn-tip {
+  width: 30%;
+  height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.btn-tip:hover {
+  cursor: pointer;
+}
+
+.btn-tip:checked {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.input-tip {
+  width: 28%;
+  height: 1.7rem;
+  border-radius: 5px;
+  text-align: center;
+  color: hsl(182, 90%, 12%);
+  font-weight: 700;
+  font-size: 1em;
+  background-color: hsl(185, 41%, 84%);
+  border-style: none;
+  text-align: right;
+}
+
+.input-tip:hover, .people-value:hover, .bill-value:hover {
+  cursor: pointer;
+}
+
+.bill, .people {
+  border-radius: 5px;
+  background-color: hsl(189, 41%, 97%);
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  height: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bill-value, .people-value {
+  border: none;
+  text-align: right;
+  float: right;
+}
+
+.totals {
+  border-radius: 10px;
+  width: 70%;
+  height: 11rem;
+  align-self: center;
+  background-color: hsl(183, 100%, 15%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.people-value, .bill-value {
+  background-color: hsl(189, 41%, 97%);
+  float: right;
+  padding-right: 10px;
+  height: 24px;
+  width: 80%;
+  font-weight: 700;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+}
+
+.money {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.total, .amount {
+  display: flex;
+  justify-content: space-around;
+}
+
+.results {
+  font-size: 32px;
+  margin: 0;
+  align-self: center;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+
+.reset {
+  width: 80%;
+  background-color: hsl(172, 67%, 45%);
+  border-style: none;
+  border-radius: 5px;
+  height: 2em;
+  align-self: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: hsl(182, 90%, 12%);
+  letter-spacing: 2px;
+}
+
+.reset:hover {
+  cursor: pointer;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.label-header {
+  color: #fff;
+}
+
+.label-person {
+  color: hsl(184, 14%, 56%);
+}
+
+.icon-people, .icon-dollar {
+  align-self: center;
+}
+
+
+@media (min-width: 400px) {
+  .App {
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  justify-content: space-around;
+ }
+
+ .calculations {
+  width: 40%;
+  height: 90%;
+ }
+
+ .totals {
+  width: 40%;
+  height: 90%;
+ }
+}

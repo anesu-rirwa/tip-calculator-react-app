@@ -1,0 +1,11 @@
+Main App
+
+Section 1
+    Bill Component
+    Tip Component
+    # of People
+
+Section 2
+    Tip Amount
+    Total
+    Reset 
